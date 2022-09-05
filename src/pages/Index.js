@@ -25,13 +25,7 @@ function Index({grappler, createGrappler}) {
                     <h1 className='grapplerName'>{name}</h1>
                 </Link>
                 <img className="grapplerImage" src={image} alt={name}/>
-                <h3>{team}</h3>
-                <h3>{lineage}</h3>
-                <h3>{rank}</h3>
-                <h3>{championships}</h3>
-                <h3>{techniques}</h3>
-                <h3>{weight}</h3>
-                <h3>{wins}</h3>
+                
                 </div>
             </div>
             )
@@ -68,6 +62,8 @@ function Index({grappler, createGrappler}) {
         // if(Object.values(newForm).length === 0) return;
         createGrappler(newForm)
     };
+
+    console.log(grappler)
 
 
     return (

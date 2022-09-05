@@ -33,6 +33,17 @@ function Main(props) {
         }
     };
 
+    const deleteGrappler = async (id) => {
+        try {
+            await fetch(`${API_URL}/${id}`, {
+                method: 'DELETE'
+            });
+            getGrappler();
+        } catch (error) {
+            
+        }
+    };
+
     useEffect(() => {
         getGrappler();
     }, [])
@@ -55,7 +66,8 @@ function Main(props) {
                     path="/grappler/:id" 
                     element={
                         <Show 
-                        grappler={grappler} 
+                        grappler={grappler}
+                        deleteGrappler={deleteGrappler} 
                         
                         />
                     } 

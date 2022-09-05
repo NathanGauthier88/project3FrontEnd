@@ -1,17 +1,30 @@
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 
-function Show({grappler}) {
+function Show({grappler, deleteGrappler}) {
     console.log(grappler);
 
 
     const { id } = useParams()
+    const navigate = useNavigate();
     const grapplers = grappler.find(p => p._id === id);
-    console.log(grappler);
+    
+    const handleDelete = () => {
+        deleteGrappler(id);
+        navigate('/');
+    }
 
     return (
-        <div className="grappler">
+        <div className="grapplerShow">
             <h1>{grapplers.name}</h1>
-            <img src={grapplers.image} alt = {grapplers.name} />
+            <img className="grapplerImage" src={grapplers.image} alt = {grapplers.name} />
+            <h3>{grapplers.team}</h3>
+            <h3>{grapplers.lineage}</h3>
+            <h3>{grapplers.rank}</h3>
+            <h3>{grapplers.championships}</h3>
+            <h3>{grapplers.techniques}</h3>
+            <h3>{grapplers.weight}</h3>
+            <h3>{grapplers.wins}</h3>
+            <button onClick={handleDelete}>Delete Grappler</button>
         </div>
     )
 }

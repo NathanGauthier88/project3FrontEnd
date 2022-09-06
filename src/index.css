@@ -30,13 +30,20 @@ code {
   justify-content: space-between;
   padding: 1rem 1rem;
   box-shadow: 2px 2px 5px black;
-  background-color: slategray;
+  background-color: black;
 }
 
 .nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 0px 20px;
+}
+
+.nav a:hover {
+  cursor: pointer;
+  transform: translate3d(0, -2px, 0);
+  text-shadow: 2px 2px 2px red;
+  
 }
 
 .grappler {
@@ -52,7 +59,7 @@ code {
   height: 700px;
   justify-content: space-evenly;
   align-items: center;
-  background: slategray;
+  background: lightgray;
   padding: 3rem;
   padding-bottom: 1rem;
   padding-top: .5rem;
@@ -71,7 +78,7 @@ code {
 
 .grapplerName {
   text-decoration: none;
-  color:black;
+  color:red;
   font-family: 'Poppins', sans-serif;
   margin-top: .1rem;
 }
@@ -109,7 +116,7 @@ textarea {
   font-family: 'Poppins', sans-serif;
   color: black;
   text-shadow: 1px 1px 2px slategrey;
-  background-color: rgb(144, 165, 186);
+  background-color: lightgrey;
   border-radius: 5px;
   font-size: 16px;
   width: 150px;
@@ -120,10 +127,18 @@ textarea {
   cursor: pointer
 }
 
+.submit-btn:hover {
+  cursor: pointer;
+  transform: translate3d(0, -2px, 0);
+  color:red;
+  
+}
+
 .grapplerShow {
   text-decoration: none;
   border-style: solid;
   font-family: 'Poppins', sans-serif;
+  color: white;
   width: 70%;
   margin: 5rem;
   margin-left: 10rem;
@@ -133,16 +148,21 @@ textarea {
   height: 1200px;
   justify-content: space-evenly;
   align-items: center;
-  background: slategray;
+  background: rgb(76, 75, 75);
   padding: 3rem;
 
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .update-btn {
   text-decoration: none;
   color: black;
   text-shadow: 1px 1px 2px slategrey;
-  background-color: rgb(144, 165, 186);
+  background-color: lightgray;
   border-radius: 5px;
   font-size: 16px;
   width: 300px;
@@ -150,6 +170,13 @@ textarea {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   border: 2px solid black;
+}
+
+.update-btn:hover {
+  cursor: pointer;
+  transform: translate3d(0, -2px, 0);
+  color:red;
+  
 }
 
 .delete-btn {
@@ -157,7 +184,7 @@ textarea {
   font-family: 'Poppins', sans-serif;
   color: black;
   text-shadow: 1px 1px 2px slategrey;
-  background-color: rgb(144, 165, 186);
+  background-color: lightgray;
   border-radius: 5px;
   font-size: 16px;
   width: 300px;
@@ -166,15 +193,28 @@ textarea {
   border: 2px solid black;
 }
 
+.delete-btn:hover {
+  cursor: pointer;
+  transform: translate3d(0, -2px, 0);
+  color:red;
+  
+}
+
+.grapplerShowName {
+  font-size: 60px;
+  margin: 0px;
+}
+
 .footer{
   height: 50px;
   width: 100%;
   font-family: 'Poppins', sans-serif;
+  color: white;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: slategray;
+  background-color: black;
   box-shadow: 2px 2px 5px black;
 }
 

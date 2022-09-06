@@ -41,16 +41,16 @@ function Show({ grappler, deleteGrappler, updateGrappler }) {
     return (
         <div className="grapplerShow">
         
-            <h1>{grapplers.name}</h1>
+            <h1 className="grapplerShowName">{grapplers.name}</h1>
             <img className="grapplerImage" src={grapplers.image} alt = {grapplers.name} />
             <div className="grapplerCard">
-            <h4>Team: {grapplers.team}</h4>
-            <h4>Lineage: {grapplers.lineage}</h4>
-            <h4>Rank: {grapplers.rank}</h4>
-            <h4>Championships: {grapplers.championships}</h4>
-            <h4>Favorite Techniques: {grapplers.techniques}</h4>
-            <h4>Weight-Class: {grapplers.weight}</h4>
-            <h4>Wins-Losses: {grapplers.wins}</h4>
+            <h4><span style={{fontWeight: 'bold', fontSize: "25px", textDecoration: "underline"}}>Team:</span> {grapplers.team}</h4>
+            <h4><span style={{fontWeight: 'bold', fontSize: "25px", textDecoration: "underline"}}>Lineage:</span> {grapplers.lineage}</h4>
+            <h4><span style={{fontWeight: 'bold', fontSize: "25px", textDecoration: "underline"}}>Rank:</span> {grapplers.rank}</h4>
+            <h4><span style={{fontWeight: 'bold', fontSize: "25px", textDecoration: "underline"}}>Championships:</span> {grapplers.championships}</h4>
+            <h4><span style={{fontWeight: 'bold', fontSize: "25px", textDecoration: "underline"}}>Favorite Techniques:</span> {grapplers.techniques}</h4>
+            <h4><span style={{fontWeight: 'bold', fontSize: "25px", textDecoration: "underline"}}>Weight-Class:</span> {grapplers.weight}</h4>
+            <h4><span style={{fontWeight: 'bold', fontSize: "25px", textDecoration: "underline"}}>Wins-Losses:</span> {grapplers.wins}</h4>
             </div>
             <button class="delete-btn" onClick={handleDelete}>Delete Grappler</button>
             <form onSubmit={handleUpdate}>

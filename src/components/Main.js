@@ -44,6 +44,22 @@ function Main(props) {
         }
     };
 
+    const updateGrappler = async (id, updatedGrappler) => {
+        try {
+            await fetch(`${API_URL}/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-type': 'Application/json'
+                },
+                body: JSON.stringify(updatedGrappler)
+            });
+
+            getGrappler();
+        } catch (error) {
+            
+        }
+    }
+
     useEffect(() => {
         getGrappler();
     }, [])
@@ -68,7 +84,7 @@ function Main(props) {
                         <Show 
                         grappler={grappler}
                         deleteGrappler={deleteGrappler} 
-                        
+                        updateGrappler={updateGrappler}
                         />
                     } 
                 />

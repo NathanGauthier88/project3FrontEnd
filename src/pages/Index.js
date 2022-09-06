@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 function Index({grappler, createGrappler}) {
     const [ newForm, setNewForm ] = useState({
         image: "",
@@ -17,7 +18,7 @@ function Index({grappler, createGrappler}) {
     })
 
     const loaded = () => {
-        return grappler.map(({ image, name, team, lineage, rank, championships, techniques, weight, wins, _id }) => {
+        return grappler.map(({ image, name, _id }) => {
             return (
             <div className='grappler' key={_id}>
                 <div className='grapplerName'>
@@ -82,7 +83,7 @@ function Index({grappler, createGrappler}) {
                     value={newForm.name}
                     onChange={handleChange}
                     name="name"
-                    placeholder="Grappler Name?"
+                    placeholder="Name"
                 
                 />
                  <input 
@@ -90,7 +91,7 @@ function Index({grappler, createGrappler}) {
                     value={newForm.team}
                     onChange={handleChange}
                     name="team"
-                    placeholder="What is their team?"
+                    placeholder="Team"
                 
                 />
                   <input 
@@ -98,7 +99,7 @@ function Index({grappler, createGrappler}) {
                     value={newForm.lineage}
                     onChange={handleChange}
                     name="lineage"
-                    placeholder="Who gave them their belt?"
+                    placeholder="Lineage"
                 
                 />
 
@@ -107,7 +108,7 @@ function Index({grappler, createGrappler}) {
                     value={newForm.rank}
                     onChange={handleChange}
                     name="rank"
-                    placeholder="What belt are they?"
+                    placeholder="Rank"
                 
                 />
 
@@ -116,7 +117,7 @@ function Index({grappler, createGrappler}) {
                     value={newForm.championships}
                     onChange={handleChange}
                     name="championships"
-                    placeholder="What have they won?"
+                    placeholder="Championships"
                 
                 />
 
@@ -125,7 +126,7 @@ function Index({grappler, createGrappler}) {
                     value={newForm.techniques}
                     onChange={handleChange}
                     name="techniques"
-                    placeholder="best techniques?"
+                    placeholder="Techniques"
                 
                 />
 
@@ -134,7 +135,7 @@ function Index({grappler, createGrappler}) {
                     value={newForm.weight}
                     onChange={handleChange}
                     name="weight"
-                    placeholder="Weight class?"
+                    placeholder="Weight class"
                 
                 />
                 

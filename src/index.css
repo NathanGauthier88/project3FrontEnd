@@ -7,18 +7,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .nav {
+  font-size: 45px;
+  font-family: 'Rubik', sans-serif;
   width: 100%;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   box-shadow: 2px 2px 5px black;
-  background-color: royalblue;
+  background-color: slategray;
 }
 
 .nav a {
@@ -29,36 +41,55 @@ code {
 
 .grappler {
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
   border-style: solid;
   width: 35%;
   margin: 1rem;
   box-shadow: 2px 2px 5px black;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 700px;
   justify-content: space-evenly;
   align-items: center;
-  background: royalblue;
+  background: slategray;
   padding: 3rem;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
 
 }
 
 .grapplerImage {
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 500px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px black;
   
 }
 
+
+
 .grapplerName {
   text-decoration: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:black;
+  font-family: 'Poppins', sans-serif;
+  margin-top: .1rem;
 }
+
+.grapplerName:hover {
+  cursor: pointer;
+  transform: translate3d(0, -2px, 0);
+  text-shadow: 2px 2px 2px slategrey;
+  
+}
+
 
 .grapplerForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -66,15 +97,16 @@ input[type="text"],
 input[type="number"],
 textarea {
   width: 30%;
-  padding: 0.75rem;
+  padding: 0.25rem;
   border: 1px solid black;
   border-radius: 1rem;
-  margin-bottom: 1rem;
   margin: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .submit-btn {
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
   color: black;
   text-shadow: 1px 1px 2px slategrey;
   background-color: rgb(144, 165, 186);
@@ -91,15 +123,61 @@ textarea {
 .grapplerShow {
   text-decoration: none;
   border-style: solid;
-  width: 35%;
-  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+  width: 70%;
+  margin: 5rem;
+  margin-left: 10rem;
   box-shadow: 2px 2px 5px black;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 1200px;
   justify-content: space-evenly;
   align-items: center;
-  background: royalblue;
+  background: slategray;
   padding: 3rem;
 
+}
+
+.update-btn {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 2px slategrey;
+  background-color: rgb(144, 165, 186);
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+  padding: 5px 10px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.delete-btn {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  text-shadow: 1px 1px 2px slategrey;
+  background-color: rgb(144, 165, 186);
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.footer{
+  height: 50px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: slategray;
+  box-shadow: 2px 2px 5px black;
+}
+
+Link {
+  text-decoration: none;
 }

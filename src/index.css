@@ -77,10 +77,14 @@ code {
 
 
 .grapplerName {
-  text-decoration: none;
   color:red;
   font-family: 'Poppins', sans-serif;
   margin-top: .1rem;
+  text-decoration: none;
+}
+
+.grapplerName:link {
+  text-decoration: none;
 }
 
 .grapplerName:hover {
@@ -220,4 +224,28 @@ h4 {
 
 Link {
   text-decoration: none;
+}
+
+.auth-links {
+  font-size: 15px;
+  display: flex;
+  align-items: center; 
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  
+}
+
+.auth-linksInner {
+  display: flex;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.auth-linksInner:hover {
+  cursor: pointer;
+  transform: translate3d(0, -2px, 0);
+  color:red;
+  
 }

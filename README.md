@@ -1,8 +1,8 @@
 # Grapplers Guide
 
-A simple site that allows you add grapplers alonside key information including who their rank, wins/losses, favorite techniques, team and more. 
+A simple site that allows you add grapplers alonside key information including their rank, wins/losses, favorite techniques, team and more. 
 
-Users will be able to add grapplers and their image. They will also be able to edit details and delete and grapplers from the site. 
+Users will be able to add grapplers and their image/information. They will also be able to edit details and delete and grapplers from the site. 
 
 # User Stories 
 
@@ -27,12 +27,19 @@ Users will be able to add grapplers and their image. They will also be able to e
 - CSS3
 - Javascript
 - HTML
+- Google Firebase
 
 # Screenshots
 
 ![image](/public/MainPageScreenshot.png)
 ![image](/public/ShowPageScreenShot.png)
 ![image](/public/ERDproject3.png)
+
+#  Unsolved Problems
+
+- Need to finalize Firebase
+
+- Issue with copying img links in form 
 
 #  Getting Started
 
@@ -44,6 +51,6 @@ Users will be able to add grapplers and their image. They will also be able to e
 
 - Add a PFP list of best grapplers that links to their details
 
-- Allow user(s), to favorite grapplers
+- Allow user(s) to favorite grapplers
 
 - Add ability to like and comment 
